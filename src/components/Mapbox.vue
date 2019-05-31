@@ -1,10 +1,12 @@
 <template>
   <div id="mapbox-wrapper">
     <div id="mapbox"></div>
+    <SearchRoutePanel :map="map"/>
   </div>
 </template>
 
 <script>
+import SearchRoutePanel from "./SearchRoutePanel";
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 var token = process.env.VUE_APP_MAPBOX_TOKEN;
 
@@ -68,6 +70,9 @@ export default {
         }
       }, labelLayerId);
     }
+  },
+  components: {
+    SearchRoutePanel
   }
 }
 </script>
