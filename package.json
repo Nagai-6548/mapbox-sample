@@ -1,0 +1,24 @@
+{
+  "name": "mapbox",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "vue-cli-service serve --development",
+    "build": "vue-cli-service build --development",
+    "build.prod": "vue-cli-service build --production"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "core-js": "^2.6.5",
+    "mapbox-gl": "^1.0.0",
+    "vue": "^2.6.10",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "ify-loader": "^1.1.0",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
